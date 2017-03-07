@@ -10,7 +10,7 @@ powerconsumption$Date <- as.Date(powerconsumption$Date, format="%d/%m/%Y")
 
 ## Subsetting the data
 subsetPower<- subset(powerconsumption, subset=(Date >= "2007-02-01" & Date <= "2007-02-02"))
-#rm(data_full)
+
 
 ## Converting dates
 datetime <- paste(as.Date(subsetPower$Date), subsetPower$Time)
